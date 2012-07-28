@@ -15,10 +15,10 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: sample_app_development
+  database: railstutdev
   pool: 5
-  username: sample_app
-  password:
+  username: postgres
+  password: param78
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
