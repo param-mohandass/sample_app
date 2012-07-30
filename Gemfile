@@ -5,8 +5,11 @@ gem 'rails', '3.2.6'
 gem 'pg'
 
 group :development, :test do
-	gem 'rspec-rails', '2.10.0'
-	gem 'capybara', '1.1.2'
+  gem 'rspec-rails', '2.10.0'
+  gem 'guard-rspec', '0.5.5'
+  gem 'capybara', '1.1.2'
+  gem 'spork', '0.9.0'
+  gem 'guard-spork'
 end
 
 
