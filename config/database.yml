@@ -41,10 +41,10 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: sample_app_test
+  database: railstuttest
   pool: 5
-  username: sample_app
-  password:
+  username: postgres
+  password: param78
 
 production:
   adapter: postgresql
