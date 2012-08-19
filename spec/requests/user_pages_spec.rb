@@ -5,7 +5,7 @@ describe "UserPages" do
  	subject { page }
 
 	describe "signup page" do
-		before { visit new_user_path }
+		before { visit signup_path }
 
 		it { should have_selector('h1',    text: 'Sign up') }
 		it { should have_selector('title', text: full_title('Sign up')) }
@@ -21,7 +21,7 @@ describe "UserPages" do
 
 	describe "signup" do
 
-	    before { visit new_user_path }
+	    before { visit signup_path }
 
 	    let(:submit) { "Create my account" }
 
@@ -56,6 +56,8 @@ describe "UserPages" do
 
 		        it { should have_selector('title', text: user.name) }
 		        it { should have_selector('div.alert.alert-success', text: 'Welcome') }
+
+		        it { should have_link('Sign out') }
 	      	end
 
 	    end
