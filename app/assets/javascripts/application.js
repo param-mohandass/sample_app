@@ -14,3 +14,11 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require_tree .
+
+$(document).ready(function() {
+
+	$('li.post_item').bind('ajax:success', function() {  
+		$(this).fadeOut();  
+	});
+   
+});
