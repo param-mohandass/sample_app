@@ -19,7 +19,7 @@ class MicropostsController < ApplicationController
 
 		respond_to do |format|
 			format.html { redirect_to root_url }  
-    		format.js   { render :nothing => true }
+    		format.js
 		end
 	end
 

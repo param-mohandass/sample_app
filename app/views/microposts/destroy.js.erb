@@ -1,0 +1,2 @@
+$('li#<%= @micropost.id %>').slideUp()
+$('span#post_count').html('<%= pluralize(current_user.microposts.count, "micropost") %>')
