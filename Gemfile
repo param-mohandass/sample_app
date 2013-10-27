@@ -31,3 +31,4 @@ end
 
 gem 'jquery-rails', '2.0.0'
 
+gem 'rubyception'
